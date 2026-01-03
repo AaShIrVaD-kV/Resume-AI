@@ -1,0 +1,135 @@
+/* Main Background */
+.stApp {
+    background-color: #0e1117;
+    color: #fafafa;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #262730;
+    border-right: 1px solid #41444e;
+}
+
+/* Headers */
+h1,
+h2,
+h3 {
+    color: #00d4ff !important;
+    /* Cyan accent */
+    font-weight: 700;
+}
+
+/* Buttons */
+.stButton>button {
+    background: linear-gradient(90deg, #00d4ff 0%, #005bea 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton>button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+}
+
+/* Text Areas and Inputs */
+.stTextArea>div>div>textarea {
+    background-color: #1c1e24;
+    color: #ffffff;
+    border: 1px solid #41444e;
+    border-radius: 8px;
+}
+
+.stTextArea>div>div>textarea:focus {
+    border-color: #00d4ff;
+    box-shadow: 0 0 0 1px #00d4ff;
+}
+
+/* File Uploader */
+[data-testid="stFileUploader"] {
+    background-color: #1c1e24;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px dashed #41444e;
+}
+
+/* Metrics/Score Card */
+[data-testid="stMetricValue"] {
+    font-size: 3rem !important;
+    color: #00d4ff !important;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+/* Progress Bar */
+.stProgress>div>div>div>div {
+    background: linear-gradient(90deg, #00d4ff 0%, #005bea 100%);
+}
+
+/* Custom Container */
+.css-1y4p8pa {
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #1c1e24;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Entity Visualization - Badges */
+.entity-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.entity-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #e0e0e0;
+    background-color: #262730;
+    border: 1px solid #41444e;
+    transition: all 0.2s ease;
+}
+
+.entity-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific Entity Colors */
+.entity-org {
+    border-color: #00d4ff;
+    color: #00d4ff;
+    background-color: rgba(0, 212, 255, 0.1);
+}
+
+.entity-person {
+    border-color: #b08dff;
+    color: #b08dff;
+    background-color: rgba(176, 141, 255, 0.1);
+}
+
+.entity-gpe {
+    border-color: #00ff9d;
+    color: #00ff9d;
+    background-color: rgba(0, 255, 157, 0.1);
+}
+
+.entity-date {
+    border-color: #ffaa00;
+    color: #ffaa00;
+    background-color: rgba(255, 170, 0, 0.1);
+}
+
+.entity-skill {
+    border-color: #ff006e;
+    color: #ff006e;
+    background-color: rgba(255, 0, 110, 0.1);
+}
